@@ -1,5 +1,3 @@
-// src/models/participant.model.js
-
 class Participant {
   /**
    * @param {number} id

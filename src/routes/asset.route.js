@@ -24,8 +24,8 @@ import {
  *           type: integer
  *           example: 123
  *         user_id:
- *           type: string
- *           example: "user_abc123"
+ *           type: number
+ *           example: 1
  *         content:
  *           type: string
  *           example: "A hidden treasure chest"

@@ -1,5 +1,3 @@
-// src/models/asset.model.js
-
 class Asset {
   /**
    * @param {number} id

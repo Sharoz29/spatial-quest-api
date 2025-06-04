@@ -1,5 +1,3 @@
-// src/models/quest.model.js
-
 class Quest {
   /**
    * @param {Object} data

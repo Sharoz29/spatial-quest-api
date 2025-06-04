@@ -1,0 +1,24 @@
+{
+  "name": "spatial-quest-api",
+  "version": "1.0.0",
+  "description": "A backend system for a multiplayer quest feature with geo-fencing capabilities.",
+  "license": "ISC",
+  "author": "Malik Sharoz Tariq",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "point-in-polygon": "^1.1.0",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

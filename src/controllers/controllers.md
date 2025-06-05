@@ -10,8 +10,8 @@ Handles operations related to quest creation and retrieval.
 
 | Method | Endpoint                       | Description                         |
 | ------ | ------------------------------ | ----------------------------------- |
-| POST   | /quests                        | Create a new quest                  |
-| GET    | /quests                        | Get all quests                      |
+| POST   | /quests/create                 | Create a new quest                  |
+| GET    | /quests/all                    | Get all quests                      |
 | GET    | /quests/location?lat=..&lon=.. | Get quests near a specific location |
 | GET    | /quests/:questId               | Get quest by ID                     |
 

@@ -1,4 +1,3 @@
-// src/controllers/asset.controller.js
 import * as assetService from "../services/asset.service.js";
 
 export async function placeAsset(req, res) {

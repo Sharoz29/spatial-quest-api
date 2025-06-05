@@ -1,4 +1,3 @@
-// src/controllers/participant.controller.js
 import * as participantService from "../services/participant.service.js";
 
 export async function joinQuest(req, res) {

@@ -1,4 +1,3 @@
-// src/controllers/quest.controller.js
 import * as questService from "../services/quest.service.js";
 
 export async function createQuest(req, res) {

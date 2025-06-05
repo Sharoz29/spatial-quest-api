@@ -25,8 +25,8 @@ export function isWithinGeoBoundary(lat, lon, polygonGeoJson) {
     return false;
   }
 
-  const point = [lon, lat]; // GeoJSON is [lon, lat]
-  const polygon = polygonGeoJson.coordinates[0]; // outer ring of the polygon
+  const point = [lon, lat];
+  const polygon = polygonGeoJson.coordinates[0];
 
   return inside(point, polygon);
 }

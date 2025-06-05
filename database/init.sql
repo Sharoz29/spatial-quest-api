@@ -1,13 +1,11 @@
--- Create table for quests with geo-fence boundaries as polygons (stored as GeoJSON)
 CREATE TABLE IF NOT EXISTS quests (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     description TEXT,
-    geo_boundary TEXT NOT NULL, -- Stored as GeoJSON Polygon
+    geo_boundary TEXT NOT NULL, 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create table for participants
 CREATE TABLE IF NOT EXISTS participants (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     quest_id INTEGER NOT NULL,
@@ -16,7 +14,6 @@ CREATE TABLE IF NOT EXISTS participants (
     FOREIGN KEY (quest_id) REFERENCES quests(id)
 );
 
--- Create table for digital assets placed by users
 CREATE TABLE IF NOT EXISTS assets (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     quest_id INTEGER NOT NULL,

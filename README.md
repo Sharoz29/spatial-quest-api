@@ -16,8 +16,6 @@ Built with Node.js, Express, SQLite, and Swagger for API documentation.
 - [API Documentation](#api-documentation)
 - [Project Structure](#project-structure)
 - [Database](#database)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -53,7 +51,7 @@ Spatial Quest API provides backend support for multiplayer quests that involve g
 
 - Node.js >= 18
 - npm
-- Docker & Docker Compose (optional but recommended)
+- Docker
 
 ---
 
@@ -62,7 +60,7 @@ Spatial Quest API provides backend support for multiplayer quests that involve g
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/spatial-quest-api.git
+git clone https://github.com/Sharoz29/spatial-quest-api.git
 cd spatial-quest-api
 ```
 
@@ -78,7 +76,7 @@ npm install
 npm run dev
 ```
 
-4. The API will run on `http://localhost:3000`.
+4. The API will run on `http://localhost:3000`. The base url redirects to the swagger ui.
 
 5. The SQLite database file `spatial_quest.db` will be created in the `/database` directory on first run.
 
@@ -114,7 +112,7 @@ The API is documented with Swagger. Once the server is running, access:
 http://localhost:3000/api-docs
 ```
 
-to view interactive API documentation and test endpoints.
+to view interactive API documentation and test endpoints. The base url redirects to the swagger ui as well.
 
 ---
 

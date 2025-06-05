@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: spatial-quest-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - sqlite_data:/app/database
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    restart: unless-stopped
+
+volumes:
+  sqlite_data:
